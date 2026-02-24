@@ -1,8 +1,8 @@
-local bufferline = require 'renoir.integrations.bufferline'
-local cmp = require 'renoir.integrations.cmp'
-local colorscheme = require 'renoir.colorscheme'
-local config = require 'renoir.config'
-local utils = require 'renoir.utils'
+local bufferline = require 'shade.integrations.bufferline'
+local cmp = require 'shade.integrations.cmp'
+local colorscheme = require 'shade.colorscheme'
+local config = require 'shade.config'
+local utils = require 'shade.utils'
 local theme = {}
 
 local function set_terminal_colors()
@@ -381,7 +381,7 @@ end
 function theme.colorscheme()
 	if vim.version().minor < 8 then
 		vim.notify(
-			'Neovim 0.8+ is required for renoir colorscheme',
+			'Neovim 0.8+ is required for shade colorscheme',
 			vim.log.levels.ERROR,
 			{ title = 'Min Theme' }
 		)
@@ -395,7 +395,7 @@ function theme.colorscheme()
 
 	vim.g.VM_theme_set_by_colorscheme = true
 	vim.o.termguicolors = true
-	vim.g.colors_name = 'renoir'
+	vim.g.colors_name = 'shade'
 
 	set_terminal_colors()
 	set_groups()

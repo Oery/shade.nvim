@@ -1,4 +1,4 @@
-local config = require 'renoir.config'
+local config = require 'shade.config'
 
 local colorscheme = {
 	standardWhite = '#f7f1ff',

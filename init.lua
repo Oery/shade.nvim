@@ -328,7 +328,7 @@ require('lazy').setup {
 	},
 }
 
-local theme = require 'renoir/init'
+local theme = require 'shade/init'
 
 theme.setup {
 	theme = 'dark',

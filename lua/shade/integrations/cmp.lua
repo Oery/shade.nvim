@@ -1,4 +1,4 @@
-local colorscheme = require 'renoir.colorscheme'
+local colorscheme = require 'shade.colorscheme'
 
 local M = {}
 

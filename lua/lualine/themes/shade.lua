@@ -1,5 +1,5 @@
-local colorscheme = require 'renoir.colorscheme'
-local config = require 'renoir.config'
+local colorscheme = require 'shade.colorscheme'
+local config = require 'shade.config'
 local theme = {}
 
 local bg = config.transparent and 'NONE' or colorscheme.editorBackground
