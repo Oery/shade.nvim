@@ -1,13 +1,31 @@
-# Neovim Colorscheme Template
+<h1 align="center">Shade.nvim</h1>
 
-This aims to make your life a lot easier when creating your colorscheme. You should change change colors, names and do a bit of fine tuning for your specific needs! If you like the project, leave a star here.
+<p align="center">A hight contrast monochromatic colorscheme for Neovim</p>
 
-## Contributing
+<p align="center">
+  <img height="400" alt="Preview Screenshot" src="https://github.com/user-attachments/assets/b3350f4a-1841-4379-a9eb-04e6f5b38297"/>
+</p>
 
-Contributions are welcome, please open an issue if you encounter any bug or if you find any improvements are needed for the code, also feel free to open a PR.
+## Install
 
-Take a look at the [Development Guide](./DEVELOPMENT_GUIDE.md)
+###### Installation
+```lua
+vim.pack.add({{ src = "https://github.com/oery/shade.nvim"}});
+```
 
-## License
+###### Configuration
+```lua
+require('shade').setup {
+	theme = 'dark',
+	transparent = true,
+}
+```
 
-[MIT License](LICENSE) 
+###### Set Colorscheme
+```lua
+vim.cmd(':colorscheme shade')
+```
+
+## Credits
+
+- The theme was originally a port of the VsCode R Dark Pro theme with black and white filter.
